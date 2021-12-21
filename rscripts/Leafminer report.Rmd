@@ -1,0 +1,88 @@
+---
+title: "Leafminer dfoliatR figures"
+author: "Camilla Seirup"
+date: "12/20/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r deps, include = FALSE}
+library(tidyverse)
+library(dplR)
+library(dfoliatR)
+```
+
+
+```{r compile_data, include = FALSE}
+source("leafminer_compile.R")
+```
+
+Chronologies as .pdfs in chrono_graphs folder
+
+dfoliatR first attempt: defoliatation events by tree
+
+```{r PEF tree defol, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 7.5}
+plot_defol(pLM_defol)
+```
+
+Figure 1. Defoliation events in THOC at the PEF
+
+
+
+```{r Howland tree defol, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 6.5}
+plot_defol(hLM_defol)
+```
+
+Figure 2. Defoliation events in THOC at Howland
+
+
+
+```{r ANP tree defol, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 6.0}
+plot_defol(aLM_defol)
+```
+
+Figure 3. Defoliation events in THOC at ANP
+
+
+
+```{r BAS defol, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 4.0}
+plot_defol(bLM_defol)
+```
+
+Figure 4. Defoliation events in THOC at BAS
+
+
+
+```{r PEF outbreak, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 7}
+plot_outbreak(pLM_outbr)
+```
+Figure 5. Outbreak results for THOC at the PEF
+
+
+
+```{r Howland outbreak, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 7}
+plot_outbreak(hLM_outbr)
+```
+
+Figure 6. Outbreak results for THOC at the Howland
+
+
+
+```{r ANP outbreak, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 7}
+plot_outbreak(aLM_outbr)
+```
+
+Figure 7. Outbreak results for THOC at the ANP
+
+
+
+```{r BAS outbreak, warning=FALSE, echo=FALSE, out.height="100%", fig.height= 7}
+plot_outbreak(bLM_outbr)
+```
+
+Figure 8. Outbreak results for THOC at the BAS
+
+
